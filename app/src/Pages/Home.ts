@@ -1,12 +1,13 @@
-import { Lightning, Colors, Router } from "@lightningjs/sdk";
+import { Lightning, Colors } from "@lightningjs/sdk";
 import { Color } from "../Utils/colors";
 
 interface HomeTemplateSpec extends Lightning.Component.TemplateSpec {
-  Container: object;
+  Container: {
+    Title: object;
+  };
 }
 
-export interface HomeTypeConfig
-  extends Lightning.Component.TypeConfig {
+export interface HomeTypeConfig extends Lightning.Component.TypeConfig {
   IsPage: true;
 }
 
@@ -20,10 +21,18 @@ export default class Home
       h: 1080,
       rect: true,
       color: Colors(Color.Background).get(),
+      Container: {
+        x: 300,
+        Title: {
+          y: 50,
+          text: {
+            text: "Recommended",
+            textColor: Colors(Color.White).get(),
+            fontSize: 36,
+            fontFace: "Nunito",
+          },
+        },
+      },
     };
-  }
-
-  override _init() {
-    Router.focusWidget("menu");
   }
 }

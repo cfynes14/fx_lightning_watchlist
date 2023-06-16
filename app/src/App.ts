@@ -66,11 +66,15 @@ export class App
     Router.startRouter(routes, this);
   }
 
+  override _init() {
+    Router.focusWidget("menu");
+  }
+
   static getFonts() {
     return [
       {
-        family: "Regular",
-        url: Utils.asset("fonts/Roboto-Regular.ttf") as string,
+        family: "Nunito",
+        url: Utils.asset("fonts/Nunito.ttf"),
       },
     ];
   }
