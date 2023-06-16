@@ -1,4 +1,4 @@
-import { Lightning, Colors } from "@lightningjs/sdk";
+import { Lightning, Colors, Router } from "@lightningjs/sdk";
 import { Color } from "../Utils/colors";
 
 interface HomeTemplateSpec extends Lightning.Component.TemplateSpec {
@@ -21,5 +21,9 @@ export default class Home
       rect: true,
       color: Colors(Color.Background).get(),
     };
+  }
+
+  override _init() {
+    Router.focusWidget("menu");
   }
 }
