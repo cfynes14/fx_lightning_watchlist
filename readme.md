@@ -13,7 +13,7 @@ For this last challenge in our learning TypeScript series, you'll need to create
 
 ## Suggestions
 
-- Use Lightning's [UI components](https://rdkcentral.github.io/Lightning-UI-Components/) to speed up development.
+- Use Lightning's [UI components](https://rdkcentral.github.io/Lightning-UI-Components/) to speed up development. I mostly recommend using [CardContentVertical](https://rdkcentral.github.io/Lightning-UI-Components/?path=/story/tiles-cards-cardcontentvertical--card-content-vertical) or [Tiles](https://rdkcentral.github.io/Lightning-UI-Components/?path=/story/tiles-cards-tile--tile) for the items, [Plinko rows](https://rdkcentral.github.io/Lightning-UI-Components/?path=/story/navigation-row--plinko) for the layout (or Rows if you struggle with the grid), and a [Column](https://rdkcentral.github.io/Lightning-UI-Components/?path=/story/navigation-column--column) for the navbar.
 - Focus on the functionality first. You'll have time to polish the UI later.
 - Don't worry about the small bookmark icons on the right side of the items. 
 
