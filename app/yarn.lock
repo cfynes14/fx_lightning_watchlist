@@ -308,6 +308,19 @@
     url-polyfill "^1.1.10"
     whatwg-fetch "^3.0.0"
 
+"@lightningjs/ui-components-theme-base@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@lightningjs/ui-components-theme-base/-/ui-components-theme-base-1.0.1.tgz#690ec4934cdb799677f7111f9484f6e564a1eeb6"
+  integrity sha512-2ZFyjNxraCzj1qGcIBicgUHUT9+inkjLeaibW/s/Fon8L9xjCGSN1BSnPm0Fw71pi7KUDvjNJWhKposhW1MF5A==
+
+"@lightningjs/ui-components@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@lightningjs/ui-components/-/ui-components-2.3.0.tgz#7d84bdb10e1cff99ca6496a88b43cbbf518338ed"
+  integrity sha512-ZohDaPbqIK4+5uTDMkdXDwNArtL9zxEWOJiit5PuYlWp9kfSyQr1rRPh0wdog+d7izhV+IwixlNyeLuUNVxyUg==
+  dependencies:
+    "@lightningjs/ui-components-theme-base" "^1.0.1"
+    debounce "^1.2.1"
+
 "@metrological/sdk@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@metrological/sdk/-/sdk-1.0.0.tgz#4d3d0bd444cf210b94c8fd613b073f77fa698a58"
@@ -678,6 +691,11 @@ cross-spawn@^7.0.2, cross-spawn@^7.0.3:
     path-key "^3.1.0"
     shebang-command "^2.0.0"
     which "^2.0.1"
+
+debounce@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/debounce/-/debounce-1.2.1.tgz#38881d8f4166a5c5848020c11827b834bcb3e0a5"
+  integrity sha512-XRRe6Glud4rd/ZGQfiV1ruXSfbvfJedlV9Y6zOlP+2K04vBYiJEte6stfFkCP03aMnY5tsipamumUjL14fofug==
 
 debug@^4.1.0, debug@^4.1.1, debug@^4.3.2, debug@^4.3.4:
   version "4.3.4"
