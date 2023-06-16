@@ -10,14 +10,29 @@ For this last challenge in our learning TypeScript series, you'll need to create
 - The user should be able to see the items in their watchlist by navigating to the corresponding page.
 - The user should be able to remove items from their watchlist by pressing enter on the items in the watchlist.
 
+
+## Suggestions
+
+- Use Lightning's [UI components](https://rdkcentral.github.io/Lightning-UI-Components/) to speed up development.
+- Focus on the functionality first. You'll have time to polish the UI later.
+- Don't worry about the small bookmark icons on the right side of the items. 
+
 ## Designs
 
-Don't worry about strictly following the design. It's there to give you an idea of what the final product should look like.
+You don't need to strictly follow the design. It's there to give you an idea of what the final product should look like.
 
 ### Home Page
 
 ![Homepage](assets.git/home.png)
 
-### Watchlist Page
+### Bookmarks Page
 
-![Homepage](assets.git/bookmarks.png)
+![Watchlist](assets.git/bookmarks.png)
+
+
+## Colors
+
+- Background color: #10141F
+- Active item: #FFFFFF
+- Inactive item: #5C6B94
+- Navbar background: #161D2F
