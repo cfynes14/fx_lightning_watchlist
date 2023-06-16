@@ -1,0 +1,6 @@
+{
+  "name": "watchlist_app",
+  "identifier": "com.domain.app.watchlistapp",
+  "version": "1.0.0",
+  "icon": "./static/icon.png"
+}
