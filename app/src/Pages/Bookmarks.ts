@@ -1,16 +1,16 @@
-import { Lightning, Colors, Router } from "@lightningjs/sdk";
+import { Lightning, Colors } from "@lightningjs/sdk";
 import { Color } from "../Utils/colors";
 import { Card } from "../Components/Card";
 import data from "../../../items.json";
 
-interface HomeTemplateSpec extends Lightning.Component.TemplateSpec {
+interface BookmarksTemplateSpec extends Lightning.Component.TemplateSpec {
   Container: {
     Title: object;
     ItemsContainer: object;
   };
 }
 
-export interface HomeTypeConfig extends Lightning.Component.TypeConfig {
+export interface BookmarksTypeConfig extends Lightning.Component.TypeConfig {
   IsPage: true;
 }
 
@@ -22,11 +22,11 @@ export type CardProps = {
   photo_height: number;
 };
 
-export default class Home
-  extends Lightning.Component<HomeTemplateSpec, HomeTypeConfig>
-  implements Lightning.Component.ImplementTemplateSpec<HomeTemplateSpec>
+export default class Bookmarks
+  extends Lightning.Component<BookmarksTemplateSpec, BookmarksTypeConfig>
+  implements Lightning.Component.ImplementTemplateSpec<BookmarksTemplateSpec>
 {
-  static override _template(): Lightning.Component.Template<HomeTemplateSpec> {
+  static override _template(): Lightning.Component.Template<BookmarksTemplateSpec> {
     return {
       w: 1920,
       h: 1080,
@@ -37,7 +37,7 @@ export default class Home
         Title: {
           y: 50,
           text: {
-            text: "Recommended",
+            text: "Bookmarks",
             textColor: Colors(Color.White).get(),
             fontSize: 36,
             fontFace: "Nunito",
@@ -62,7 +62,7 @@ export default class Home
   index = 0;
 
   override _init() {
-    Router.focusWidget("Menu");
+    // Router.focusWidget("Menu");
     // add, update, add to watchlist
 
     data.forEach((items: CardProps, index: number) => {

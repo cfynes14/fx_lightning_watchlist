@@ -1,5 +1,6 @@
 import type { Router } from "@lightningjs/sdk";
 import Home from "../Pages/Home";
+import Bookmarks from "../Pages/Bookmarks";
 
 export const routes: Router.Config = {
   root: "home",
@@ -7,15 +8,14 @@ export const routes: Router.Config = {
     {
       path: "home",
       component: Home,
+      widgets: ["menu"],
+    },
+    {
+      path: "bookmarks",
+      component: Bookmarks,
+      widgets: ["menu"],
     },
   ],
 };
-
-// Add the widgets to to all routes
-const widgets: Lowercase<string>[] = ["menu"];
-
-routes.routes.forEach((route) => {
-  route.widgets = widgets;
-});
 
 export default routes;

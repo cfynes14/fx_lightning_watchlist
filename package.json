@@ -1,5 +1,8 @@
 {
     "scripts": {
         "dev": "cd app && lng build && lng serve"
+    },
+    "dependencies": {
+        "rxjs": "^7.8.1"
     }
 }
